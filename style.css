@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Sego fe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: #1b1b1b;
+    position: relative;
+}
+
+.up{
+    position: absolute;
+    top: 100px;
+    left: 60px;
+    z-index: 1000;
+}
+
+.down{
+    position: absolute;
+    bottom: 99px;
+    right: 60px;
+    z-index: 1000;
+}
+
+#login-area {
+    width: 70%;
+    height: 80%;
+    background-color: #f2f3f6;
+    border: solid 1px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 30px;
+}
+
+.left-area {
+    width: 50%;
+    height: 100%;
+}
+
+.container-sign-in {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.head-sign-in {
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sub-title {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.icon-sign-in svg {
+    width: 28px;
+    border-radius: 0px;
+    background: #E6EDFB;
+    box-shadow: 5px 5px 10px #c4c9d5,
+        -5px -5px 10px #ffffff;
+
+}
+
+.email-sign-in .icon-sign-in svg path {
+    fill: url(#gradient);
+}
+
+.email-sign-in {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.area-sign-in {
+    border-radius: 5px;
+    background: #E6EDFB;
+    box-shadow: inset 5px 5px 10px #c4c9d5,
+        inset -5px -5px 10px #ffffff;
+    height: 35px;
+    width: 250px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    padding: 8px 5px;
+}
+
+.cheack-remind-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 55px;
+    color: #535b63;
+}
+
+.create-account span button{
+    color: #3024b9;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+
+.btn-12,
+.btn-12 *,
+.btn-12 :after,
+.btn-12 :before,
+.btn-12:after,
+.btn-12:before {
+    border: 0 solid;
+    box-sizing: border-box;
+}
+
+.btn-12 {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: button;
+    background-image: none;
+    color: #fff;
+    cursor: pointer;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+        Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+        Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-size: 100%;
+    font-weight: 900;
+    line-height: 1.5;
+    margin: 0;
+    -webkit-mask-image: -webkit-radial-gradient(#8E2DE2, #fff);
+    padding: 0;
+    text-transform: capitalize;
+    background: #8E2DE2;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4A00E0, #8E2DE2);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.btn-12:disabled {
+    cursor: default;
+}
+
+.btn-12:-moz-focusring {
+    outline: auto;
+}
+
+.btn-12 svg {
+    display: block;
+    vertical-align: middle;
+}
+
+.btn-12 [hidden] {
+    display: none;
+}
+
+.btn-12 {
+    border-radius: 99rem;
+    border-width: 2px;
+    overflow: hidden;
+    padding: 0.8rem 3rem;
+    position: relative;
+}
+
+.btn-12 span {
+    mix-blend-mode: difference;
+}
+
+.btn-12:after,
+.btn-12:before {
+    background: linear-gradient(90deg,
+            #fff 25%,
+            transparent 0,
+            transparent 50%,
+            #fff 0,
+            #fff 75%,
+            transparent 0);
+    content: "";
+    inset: 0;
+    position: absolute;
+    transform: translateY(var(--progress, 100%));
+    transition: transform 0.2s ease;
+}
+
+.btn-12:after {
+    --progress: -100%;
+    background: linear-gradient(90deg,
+            transparent 0,
+            transparent 25%,
+            #fff 0,
+            #fff 50%,
+            transparent 0,
+            transparent 75%,
+            #fff 0);
+    z-index: -1;
+}
+
+.btn-12:hover:after,
+.btn-12:hover:before {
+    --progress: 0;
+}
+
+
+
+.right-area {
+    width: 50%;
+    height: 100%;
+}
+
+.container-sign-up {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.head-sign-up {
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sub-title {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.icon-sign-up svg {
+    width: 28px;
+    border-radius: 0px;
+    background: #E6EDFB;
+    box-shadow: 5px 5px 10px #c4c9d5,
+        -5px -5px 10px #ffffff;
+}
+
+.email-sign-up .icon-sign-up svg path {
+    fill: url(#gradient);
+}
+
+.email-sign-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sign-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.area-sign-up {
+    border-radius: 5px;
+    background: #E6EDFB;
+    box-shadow: inset 5px 5px 10px #c4c9d5,
+        inset -5px -5px 10px #ffffff;
+    height: 35px;
+    width: 250px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    padding: 8px 5px;
+}
+
+.cheack-remind-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 55px;
+    color: #535b63;
+}
+
+.cheack-remind-box label span{
+    color: #3024b9;
+}
+
+
+.cover {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    left: 100; /* Start with the cover off-screen to the right */
+    transition: transform 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to right, #4A00E0, #8E2DE2);
+}
+
+.cover .wlc-head-1{
+    font-size: 30px;
+    color: white;
+}
+.cover span svg{
+    width: 400px;
+    height: 400px;
+}
+
+
+
